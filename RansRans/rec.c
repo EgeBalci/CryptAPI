@@ -146,7 +146,7 @@ CHAR *get_filename_ext(CONST CHAR *filename)
 VOID file_handler(CONST CHAR * filepath)
 {
 
-	MessageBox(NULL , filepath, "!!!", MB_ICONERROR);
+	//MessageBox(NULL , filepath, "!!!", MB_ICONERROR);
 
 	DWORD access;
 	access =  GetFileAttributes(filepath);
